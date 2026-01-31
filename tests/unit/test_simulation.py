@@ -11,8 +11,8 @@ from jax_extract.simulation.jax_spice import (
 from jax_extract.simulation.spice_netlist import (
     NetlistFormat,
     SimulationSetup,
-    SpiceNetlistWriter,
     SimulationTestbench,
+    SpiceNetlistWriter,
     generate_step_response_testbench,
     rc_network_to_spice,
 )
