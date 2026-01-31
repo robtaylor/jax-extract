@@ -85,6 +85,9 @@ known-first-party = ["jax_extract"]
 pythonVersion = "3.10"
 typeCheckingMode = "basic"
 include = ["src"]
+# PDKMaster and c4m-pdk-ihpsg13g2 use dynamic attributes that pyright can't infer
+reportMissingImports = "warning"
+reportAttributeAccessIssue = "warning"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
